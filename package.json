@@ -1,0 +1,23 @@
+{
+  "name": "glundgren93-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reusable Agent Skills for Pi and compatible coding agents",
+  "keywords": [
+    "pi-package",
+    "agent-skills"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glundgren93/skills.git"
+  },
+  "files": [
+    "skills",
+    "README.md"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  }
+}
