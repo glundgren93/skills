@@ -9,8 +9,10 @@ Protect the user's current focus. Capture a distraction with enough context to m
 
 This skill has two modes:
 
-- **Capture** (`read-later`): park one distraction, then point the user back to their current task.
-- **Resume** (`read-now`): find one parked item and provide a small re-entry ramp.
+- **Capture**: park one distraction, then point the user back to their current task.
+- **Resume**: find one parked item and provide a small re-entry ramp.
+
+When invoked as `/skill:read-later`, treat arguments beginning with `resume` or `read-now` as Resume mode. Treat every other argument as Capture mode.
 
 ## Local configuration
 

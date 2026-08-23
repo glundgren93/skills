@@ -14,19 +14,15 @@ Reusable [Agent Skills](https://agentskills.io/) for Pi and compatible coding ag
 pi install https://github.com/glundgren93/skills
 ```
 
-This installs the skills and prompt templates. Use `pi config` to enable or disable individual resources.
+This installs the skills. Use `pi config` to enable or disable individual resources.
 
 ## Read Later
 
-The package adds two low-friction commands:
-
 ```text
-/read-later <idea, link, question, or side quest>
-/read-now [title, number, tag, or search phrase]
+/skill:read-later <idea, link, question, or side quest>
+/skill:read-later resume [title, number, tag, or search phrase]
 ```
 
-`/read-later` captures the distraction without researching it, records the current context, and gives it a small re-entry plan. `/read-now` selects one parked item and offers a tiny first step instead of dropping the user into the whole topic at once.
+The default mode captures a distraction without researching it, records the current context, and gives it a small re-entry plan. `resume` selects one parked item and offers a tiny first step instead of dropping the user into the whole topic at once.
 
 On first use, the agent asks for the absolute path to the Obsidian vault and writes it into the configuration block of the locally installed `SKILL.md`. The default vault folder is `Read Later`; asking the agent to change vault updates that same local block.
-
-Compatible agents without Pi prompt templates can invoke `/skill:read-later` and ask for **Capture mode** or **Resume mode**.

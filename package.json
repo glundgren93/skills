@@ -13,15 +13,11 @@
   },
   "files": [
     "skills",
-    "prompts",
     "README.md"
   ],
   "pi": {
     "skills": [
       "./skills"
-    ],
-    "prompts": [
-      "./prompts"
     ]
   }
 }
