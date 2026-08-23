@@ -7,6 +7,7 @@ Reusable [Agent Skills](https://agentskills.io/) for Pi and compatible coding ag
 - [`be-brief`](skills/be-brief/SKILL.md) — make responses concise and actionable.
 - [`for-later`](skills/for-later/SKILL.md) — save distracting topics with enough origin context for a future conversation or agent.
 - [`for-now`](skills/for-now/SKILL.md) — choose a saved topic, restore its origin, and decide how to continue.
+- [`mentor-me`](skills/mentor-me/SKILL.md) — learn unfamiliar codebases through theory-first, student-owned implementation.
 - [`test-signal-audit`](skills/test-signal-audit/SKILL.md) — audit and improve low-signal tests using mutation evidence.
 
 ## Install for Pi
@@ -16,6 +17,14 @@ pi install https://github.com/glundgren93/skills
 ```
 
 This installs the skills. Use `pi config` to enable or disable individual resources.
+
+## Mentor Me
+
+Learn a codebase by building it through short theory primers, one consequential decision at a time, small authorized code slices, and a durable `LEARNING_JOURNAL.md`:
+
+```text
+/skill:mentor-me
+```
 
 ## For Later / For Now
 
