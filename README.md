@@ -5,7 +5,7 @@ Reusable [Agent Skills](https://agentskills.io/) for Pi and compatible coding ag
 ## Included skills
 
 - [`be-brief`](skills/be-brief/SKILL.md) — make responses concise and actionable.
-- [`read-later`](skills/read-later/SKILL.md) — park distracting ideas in an Obsidian vault and gently resume one later.
+- [`for-later`](skills/for-later/SKILL.md) — save distracting topics with enough origin context for a future conversation or agent.
 - [`test-signal-audit`](skills/test-signal-audit/SKILL.md) — audit and improve low-signal tests using mutation evidence.
 
 ## Install for Pi
@@ -16,13 +16,13 @@ pi install https://github.com/glundgren93/skills
 
 This installs the skills. Use `pi config` to enable or disable individual resources.
 
-## Read Later
+## For Later
 
 ```text
-/skill:read-later <idea, link, question, or side quest>
-/skill:read-later resume [title, number, tag, or search phrase]
+/skill:for-later <idea, link, question, or side quest>
+/skill:for-later follow-up [title, number, tag, or search phrase]
 ```
 
-The default mode captures a distraction without researching it, records the current context, and gives it a small re-entry plan. `resume` selects one parked item and offers a tiny first step instead of dropping the user into the whole topic at once.
+The default mode saves a distraction without exploring it. Each note records where the topic came from, relevant context and anchors, open questions, and a handoff for a future agent. `follow-up` restores one topic and asks what direction the user wants before acting.
 
-On first use, the agent asks for the absolute path to the Obsidian vault and writes it into the configuration block of the locally installed `SKILL.md`. The default vault folder is `Read Later`; asking the agent to change vault updates that same local block.
+On first use, the agent asks for the absolute path to the Obsidian vault and writes it into the configuration block of the locally installed `SKILL.md`. The default vault folder is `For Later`; asking the agent to change vault updates that same local block.
